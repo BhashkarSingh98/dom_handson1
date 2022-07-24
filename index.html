@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="text">Write the code to access element which is having id as "text"</h1>
+    <h1></h1>
+    <h1 class="box"></h1>
+    <h1 class="hello">hello</h1>
+    <hr>
+    <h3>Create three cards on HTML page and arrange them using flex property in row or horizontal direction and also create button at the bottom named "Change Flex direction". When user clicks on this button, the cards arrangement should be changed to vertical direction.</h3>
+    <div id="threecards">
+        <div class="cards">card 1</div>
+        <div class="cards">card 2</div>
+        <div class="cards">card 3</div>
+    </div>
+    <button class="button1" onclick="dirchang()">click here</button>
+    <hr>
+    <h2>What’s the difference between window vs document?</h2>
+    <div class="wvsdom">
+        <div class="dom"><b>Document Object:</b> The document object represent a web page that is loaded in the browser. By accessing the document object, we can access the element in the HTML page. With the help of document objects, we can add dynamic content to our web page. The document object can be accessed with a window.document or just document.
+<pre>
+Syntax:
+
+document.method_name;
+
+</pre>
+
+        </div>
+        <div class="window">
+           <b>Window Object:</b>  The window object is the topmost object of the DOM hierarchy. It represents a browser window or frame that displays the contents of the webpage. Whenever a window appears on the screen to display the contents of the document, the window object is created. 
+            <pre>
+Syntax:
+
+window.property_name;
+            </pre>
+        </div>
+    </div>
+    <hr>
+<h3>
+
+    Add one style attribute and give text color as red and id attribute and give the id value as ""heading"" in the above given h1 tag using DOM functions"</h3>
+    <h1 id="heading">Hello</h1>
+
+    <hr>
+<h3>Create an HTML page having content as Hello world and a button named Replace Text. When user will click on this button page content should be changed to "Welcome to Elevation academy"</h3>
+    <h1 id="hellow1">Hello World !!</h1>
+    <button class="button2" onclick="changtext()">click here</button>
+
+    <hr>
+    <h3>Write code to implement timer clock using JS -- display HH:MM:SS -- the time should keep updating every second.</h3>
+
+    <div class="clock">
+       
+
+        <span id="hours">00</span>
+        <span id="munites">00</span>
+        <span id="seconds">00</span>
+        <span id="amorpm">AM</span>
+    </div>
+
+<hr>
+
+<h3>Create a select drop down for selecting Year 20-21, 21-22 etc. Print the item text selected</h3>
+
+<div class="selectbox">
+<label for="year"><p class="yearpara">Seclect Year</p></label>
+
+<select name="year" class="yearoption" id="allyear">
+  <option value="2017" class="option1">2017</option>
+    <option value="2018"  class="option2">2018</option>
+    <option value="2019"  class="option3">2019</option>
+    <option value="2020"  class="option4">2020</option>
+    <option value="2021"  class="option4">2021</option>
+    <option value="2022"  class="option4">2022</option>
+</select>
+
+
+<p class="selected">selected year : <span id="selectedyear"></span></p>
+
+<button class="button3" onclick="chang()">click here</button>
+</div>
+<hr>
+<div class="form1">
+    <form action="#">
+        <label for="fname" class="lable1">Name:</label><br>
+        <input type="text" id="fname" name="fname" placeholder="Enter Name"><br>
+        <label for="email" class="lable1">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="example@prepbytes.com"><br>
+        <label for="num" class="lable1">Mobile No:</label><br>
+        <input type="tel" id="num" name="num" placeholder="Mobile No (+91)"><br>
+        <label for="year" class="lable1">Birth year:</label><br>
+        <input type="number" id="year" name="year" placeholder="Birth Year"><br>
+        <button type="submit" class="button4">Submit</button>
+        
+      </form> 
+</div>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
